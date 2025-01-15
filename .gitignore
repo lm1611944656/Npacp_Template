@@ -1,7 +1,18 @@
-# 此为注释 – 将被 Git 忽略
-*.a       # 忽略所有 .a 结尾的文件
-!lib.a    # 但 lib.a 除外
-build/    # 忽略 build/ 目录下的所有文件
-doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
-cmake-build-debug/  # 忽略目录
-.idea   # 忽略.idea
+# 忽略所有的 .log 文件
+*.log
+
+# 忽略 cmake-build-debug 目录
+cmake-build-debug/
+
+# 忽略临时文件夹
+.idea/
+
+# 忽略 Windows 系统的文件
+Thumbs.db
+Desktop.ini
+
+# 忽略所有的 .exe 文件
+*.exe
+
+# 忽略指定的文件（例如 my_config.txt）
+my_config.txt
